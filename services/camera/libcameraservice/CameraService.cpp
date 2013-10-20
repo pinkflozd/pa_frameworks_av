@@ -819,7 +819,6 @@ CameraService::Client::Client(const sp<CameraService>& cameraService,
     LOG1("Client::Client E (pid %d, id %d)", callingPid, cameraId);
 
     mRemoteCallback = cameraClient;
-    mLongshotEnabled = false;
 
     cameraService->setCameraBusy(cameraId);
     cameraService->loadSound();
